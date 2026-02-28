@@ -1,0 +1,352 @@
+<!-- 
+  Safe Job - وظيفة آمنة | Contact Page
+  صفحة الاتصال - تتضمن نموذج الاتصال والمعلومات والتواصل الاجتماعي
+  
+  Testing Language Switcher: اضغط زر تبديل اللغة في الأعلى
+  WhatsApp Number: لتغيير رقم الواتساب، عدل الرقم في الرابط أدناه
+  Contact Email: لتفعيل البريد الإلكتروني استخدم خدمة مثل Formspree
+  Example Formspree: action="https://formspree.io/f/your-form-id"
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Safe Job - وظيفة آمنة - Get in touch with us">
+    <title>Contact Us - Safe Job - وظيفة آمنة</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="sj-header" role="banner">
+        <div class="sj-container">
+            <div class="sj-header__inner">
+                <!-- Logo -->
+                <a href="index.html" class="sj-logo" aria-label="Safe Job Home">
+                    <span class="sj-logo__main">Safe Job</span>
+                    <span class="sj-logo__sub">وظيفة آمنة</span>
+                </a>
+                
+                <!-- Navigation -->
+                <nav class="sj-nav" role="navigation" aria-label="Main Navigation">
+                    <button class="sj-menu-toggle" id="sj-menu-toggle" aria-expanded="false" aria-controls="sj-nav-list" aria-label="Toggle menu">
+                        <span class="sj-menu-toggle__bar"></span>
+                        <span class="sj-menu-toggle__bar"></span>
+                        <span class="sj-menu-toggle__bar"></span>
+                    </button>
+                    
+                    <ul class="sj-nav__list" id="sj-nav-list" role="menubar">
+                        <li role="none">
+                            <a href="index.html" class="sj-nav__link" 
+                               data-nav-en="Home" data-nav-ar="الرئيسية"
+                               data-href-en="index.html" data-href-ar="index.html"
+                               role="menuitem">Home</a>
+                        </li>
+                        <li role="none">
+                            <a href="about.html" class="sj-nav__link" 
+                               data-nav-en="About Us" data-nav-ar="من نحن"
+                               data-href-en="about.html" data-href-ar="about.html"
+                               role="menuitem">About Us</a>
+                        </li>
+                        <li role="none">
+                            <a href="services.html" class="sj-nav__link"
+                               data-nav-en="Services" data-nav-ar="الخدمات"
+                               data-href-en="services.html" data-href-ar="services.html"
+                               role="menuitem">Services</a>
+                        </li>
+                        <li role="none">
+                            <a href="contact.html" class="sj-nav__link sj-nav__link--active" 
+                               data-nav-en="Contact Us" data-nav-ar="اتصل بنا"
+                               data-href-en="contact.html" data-href-ar="contact.html"
+                               role="menuitem">Contact Us</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Language Toggle -->
+                    <button class="sj-lang-toggle" id="sj-lang-toggle" aria-label="Switch to Arabic">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        AR
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="sj-section sj-section--secondary" style="padding: var(--sj-spacing-lg) 0;">
+            <div class="sj-container">
+                <h1 data-contact-title-en="Contact Us" data-contact-title-ar="اتصل بنا">Contact Us</h1>
+                <p data-contact-subtitle-en="We'd love to hear from you. Get in touch with us today." data-contact-subtitle-ar="نود أن نسمع منك. تواصل معنا اليوم.">
+                    We'd love to hear from you. Get in touch with us today.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="sj-section" aria-label="Contact Information">
+            <div class="sj-container">
+                <div class="sj-contact-grid">
+                    <!-- Contact Form -->
+                    <div class="sj-animate-on-scroll">
+                        <h2>Send Us a Message</h2>
+                        <p style="margin-bottom: var(--sj-spacing-lg);">Fill out the form below and we'll get back to you as soon as possible.</p>
+                        
+                        <!-- 
+                            Contact Form Notes (Arabic):
+                            - الحقول المطلوبة يجب ملؤها
+                            - البريد الإلكتروني يجب أن يكون صحيحاً
+                            - الرسالة يجب أن تكون 10 أحرف على الأقل
+                            - لاستخدام Formspree: أنشئ حساباً مجانياً على formspree.io
+                            - احصلي على form ID وضعيه في الرابط أدناه
+                            - مثال: action="https://formspree.io/f/your-form-id"
+                        -->
+                        
+                        <!-- Formspree Form - Replace 'YOUR_FORMSPREE_ID' with your actual form ID from formspree.io -->
+                        <form class="sj-form" id="sj-contact-form" action="https://formspree.io/f/mpwzgzlr" method="POST">
+                            <input type="hidden" name="_subject" value="New Contact Form Submission - Safe Job">
+                            <input type="hidden" name="_next" value="?submitted=true">
+                            <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+                            
+                            <div class="sj-form__group">
+                                <label for="sj-name" class="sj-form__label">Name *</label>
+                                <input type="text" id="sj-name" name="name" class="sj-form__input" required aria-required="true" placeholder="Your name">
+                                <span class="sj-form__error">Please enter your name</span>
+                            </div>
+                            
+                            <div class="sj-form__group">
+                                <label for="sj-email" class="sj-form__label">Email *</label>
+                                <input type="email" id="sj-email" name="email" class="sj-form__input" required aria-required="true" placeholder="your.email@example.com">
+                                <span class="sj-form__error">Please enter a valid email address</span>
+                            </div>
+                            
+                            <div class="sj-form__group">
+                                <label for="sj-subject" class="sj-form__label">Subject *</label>
+                                <input type="text" id="sj-subject" name="subject" class="sj-form__input" required aria-required="true" placeholder="What is this about?">
+                                <span class="sj-form__error">Please enter a subject</span>
+                            </div>
+                            
+                            <div class="sj-form__group">
+                                <label for="sj-message" class="sj-form__label">Message *</label>
+                                <textarea id="sj-message" name="message" class="sj-form__textarea" required aria-required="true" placeholder="Your message here... (minimum 10 characters)"></textarea>
+                                <span class="sj-form__error">Message must be at least 10 characters</span>
+                            </div>
+                            
+                            <button type="submit" class="sj-btn sj-btn--primary">Send Message</button>
+                            
+                            <!-- Success/Error Messages -->
+                            <div class="sj-form__success" role="alert" aria-live="polite"></div>
+                            <div class="sj-form__error" role="alert" aria-live="assertive"></div>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Info -->
+                    <div class="sj-animate-on-scroll">
+                        <h2>Contact Information</h2>
+                        <p style="margin-bottom: var(--sj-spacing-lg);">Reach us through any of these channels:</p>
+                        
+                        <div class="sj-contact-info">
+                            <!-- Phone -->
+                            <div class="sj-contact-item">
+                                <div class="sj-contact-item__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="sj-contact-item__label">Phone</div>
+                                    <a href="tel:+9647765722688" class="sj-contact-item__value">+964 776 572 2688</a>
+                                </div>
+                            </div>
+                            
+                            <!-- WhatsApp -->
+                            <div class="sj-contact-item">
+                                <div class="sj-contact-item__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="sj-contact-item__label">WhatsApp</div>
+                                    <a href="https://wa.me/9647765722688?text=Hello,%20I'm%20interested%20in%20Safe%20Job%20services." 
+                                       class="sj-contact-item__value" 
+                                       data-whatsapp="contact"
+                                       target="_blank" 
+                                       rel="noopener noreferrer">
+                                        Chat on WhatsApp
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="sj-contact-item">
+                                <div class="sj-contact-item__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="sj-contact-item__label">Email</div>
+                                    <a href="mailto:mohamedali0773955@gmail.com" class="sj-contact-item__value">mohamedali0773955@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <!-- Location -->
+                            <div class="sj-contact-item">
+                                <div class="sj-contact-item__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <div class="sj-contact-item__label">Location</div>
+                                    <span class="sj-contact-item__value">Iraq</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social Links -->
+                        <div style="margin-top: var(--sj-spacing-xl);">
+                            <h3 style="margin-bottom: var(--sj-spacing-md);">Follow Us</h3>
+                            <div class="sj-social-links">
+                                <a href="https://www.facebook.com/share/18RB3UJqRR/?mibextid=wwXIfr" 
+                                   class="sj-social-link" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   aria-label="Facebook">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.instagram.com/h4p1.7?igsh=MXNzdzN0aHcxZXl6dw%3D%3D&utm_source=qr" 
+                                   class="sj-social-link" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   aria-label="Instagram">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.tiktok.com/@m_h.12_d?_r=1&_t=ZS-93ymhmLVT2C" 
+                                   class="sj-social-link" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   aria-label="TikTok">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                        <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Map Placeholder -->
+                <div style="margin-top: var(--sj-spacing-xl);">
+                    <h2>Our Location</h2>
+                    <!-- 
+                        Map Placeholder Note (Arabic):
+                        لاستبدال هذا العنصر بخريطة Google:
+                        1. اذهب إلى Google Maps واحصل على كود التضمين
+                        2. استبدل div.sj-map بكود iframe من Google
+                        3. مثال: <iframe src="https://www.google.com/maps/embed?..." ...></iframe>
+                    -->
+                    <div class="sj-map">
+                        <div class="sj-map__placeholder">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                            <p>Map placeholder - Iraq</p>
+                            <p style="font-size: 0.85rem;">Replace with Google Maps embed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="sj-footer" role="contentinfo">
+        <div class="sj-container">
+            <div class="sj-footer__grid">
+                <div class="sj-footer__brand">
+                    <div class="sj-footer__logo">Safe Job - وظيفة آمنة</div>
+                    <p class="sj-footer__desc">Your trusted partner for legal consultation and recruitment services in Iraq and the Middle East.</p>
+                    <div class="sj-social-links">
+                        <a href="https://www.facebook.com/share/18RB3UJqRR/?mibextid=wwXIfr" 
+                           class="sj-social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/h4p1.7?igsh=MXNzdzN0aHcxZXl6dw%3D%3D&utm_source=qr" 
+                           class="sj-social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@m_h.12_d?_r=1&_t=ZS-93ymhmLVT2C" 
+                           class="sj-social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="TikTok">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="sj-footer__section">
+                    <h4 class="sj-footer__title">Quick Links</h4>
+                    <ul class="sj-footer__links">
+                        <li><a href="index.html" class="sj-footer__link" data-footer-link-en="Home" data-footer-link-ar="الرئيسية">Home</a></li>
+                        <li><a href="about.html" class="sj-footer__link" data-footer-link-en="About Us" data-footer-link-ar="من نحن">About Us</a></li>
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="Services" data-footer-link-ar="الخدمات">Services</a></li>
+                        <li><a href="contact.html" class="sj-footer__link" data-footer-link-en="Contact Us" data-footer-link-ar="اتصل بنا">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sj-footer__section">
+                    <h4 class="sj-footer__title">Services</h4>
+                    <ul class="sj-footer__links">
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="Legal Consultation" data-footer-link-ar="الاستشارات القانونية">Legal Consultation</a></li>
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="Employment Matching" data-footer-link-ar="مطابقة التوظيف">Employment Matching</a></li>
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="CV Review" data-footer-link-ar="مراجعة السيرة الذاتية">CV Review</a></li>
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="Interview Coaching" data-footer-link-ar="تدريب المقابلات">Interview Coaching</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sj-footer__bottom">
+                <p class="sj-footer__copyright">&copy; 2024 Safe Job - وظيفة آمنة. All rights reserved.</p>
+                <div class="sj-footer__settings">
+                    <button class="sj-animation-toggle" id="sj-animation-toggle" aria-label="Toggle animations">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                        </svg>
+                        Disable Animations
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,404 @@
+<!-- 
+  Safe Job - وظيفة آمنة | Home Page
+  صفحة الرئيسية للشركة - تتضمن دوار الشرائح والخدمات
+  
+  Testing Language Switcher: اضغط زر تبديل اللغة في الأعلى
+  Replacing Hero Images: استبدل الصور في مجلد images/ أوحدث روابط الصور في section.dj-hero__slide
+  Contact Email: لتفعيل البريد الإلكتروني استخدم خدمة مثل Formspree
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Safe Job - وظيفة آمنة - Professional law and recruitment services">
+    <title>Safe Job - وظيفة آمنة | Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="sj-header" role="banner">
+        <div class="sj-container">
+            <div class="sj-header__inner">
+                <!-- Logo -->
+                <a href="index.html" class="sj-logo" aria-label="Safe Job Home">
+                    <span class="sj-logo__main">Safe Job</span>
+                    <span class="sj-logo__sub">وظيفة آمنة</span>
+                </a>
+                
+                <!-- Navigation -->
+                <nav class="sj-nav" role="navigation" aria-label="Main Navigation">
+                    <button class="sj-menu-toggle" id="sj-menu-toggle" aria-expanded="false" aria-controls="sj-nav-list" aria-label="Toggle menu">
+                        <span class="sj-menu-toggle__bar"></span>
+                        <span class="sj-menu-toggle__bar"></span>
+                        <span class="sj-menu-toggle__bar"></span>
+                    </button>
+                    
+                    <ul class="sj-nav__list" id="sj-nav-list" role="menubar">
+                        <li role="none">
+                            <a href="index.html" class="sj-nav__link sj-nav__link--active" 
+                               data-nav-en="Home" data-nav-ar="الرئيسية"
+                               data-href-en="index.html" data-href-ar="index.html"
+                               role="menuitem">Home</a>
+                        </li>
+                        <li role="none">
+                            <a href="about.html" class="sj-nav__link"
+                               data-nav-en="About Us" data-nav-ar="من نحن"
+                               data-href-en="about.html" data-href-ar="about.html"
+                               role="menuitem">About Us</a>
+                        </li>
+                        <li role="none">
+                            <a href="services.html" class="sj-nav__link"
+                               data-nav-en="Services" data-nav-ar="الخدمات"
+                               data-href-en="services.html" data-href-ar="services.html"
+                               role="menuitem">Services</a>
+                        </li>
+                        <li role="none">
+                            <a href="contact.html" class="sj-nav__link"
+                               data-nav-en="Contact Us" data-nav-ar="اتصل بنا"
+                               data-href-en="contact.html" data-href-ar="contact.html"
+                               role="menuitem">Contact Us</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Language Toggle -->
+                    <button class="sj-lang-toggle" id="sj-lang-toggle" aria-label="Switch to Arabic">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        AR
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section with Carousel -->
+        <section class="sj-hero" aria-label="Hero Banner">
+            <div class="sj-hero__carousel">
+                <!-- Slide 1 - Professional Business -->
+                <div class="sj-hero__slide sj-hero__slide--active">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=600&fit=crop" 
+                         alt="Professional Office Environment" class="sj-hero__image">
+                    <div class="sj-hero__overlay">
+                        <div class="sj-hero__content">
+                            <h1 class="sj-hero__title" 
+                                data-hero-title-en="Your Trusted Legal & Recruitment Partner" 
+                                data-hero-title-ar="شريكك الموثوق في الخدمات القانونية والتوظيف">
+                                Your Trusted Legal & Recruitment Partner
+                            </h1>
+                            <p class="sj-hero__subtitle"
+                               data-hero-subtitle-en="Connecting talent with opportunity through professional legal and employment services"
+                               data-hero-subtitle-ar="نربط المواهب بالفرص من خلال الخدمات القانونية والتوظيفية المهنية">
+                                Connecting talent with opportunity through professional legal and employment services
+                            </p>
+                            <a href="contact.html" class="sj-hero__cta"
+                               data-hero-cta-en="Get Started" data-hero-cta-ar="ابدأ الآن">
+                                Get Started
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 2 - Legal Consultation -->
+                <div class="sj-hero__slide">
+                    <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1920&h=600&fit=crop" 
+                         alt="Legal Consultation Services" class="sj-hero__image">
+                    <div class="sj-hero__overlay">
+                        <div class="sj-hero__content">
+                            <h1 class="sj-hero__title"
+                                data-hero-title-en="Expert Legal Consultation" 
+                                data-hero-title-ar="استشارات قانونية متخصصة">
+                                Expert Legal Consultation
+                            </h1>
+                            <p class="sj-hero__subtitle"
+                               data-hero-subtitle-en="Professional legal advice to protect your rights and interests"
+                               data-hero-subtitle-ar="نصائح قانونية احترافية لحماية حقوقك ومصالحك">
+                                Professional legal advice to protect your rights and interests
+                            </p>
+                            <a href="services.html" class="sj-hero__cta"
+                               data-hero-cta-en="Our Services" data-hero-cta-ar="خدماتنا">
+                                Our Services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 3 - Recruitment -->
+                <div class="sj-hero__slide">
+                    <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=1920&h=600&fit=crop" 
+                         alt="Recruitment Solutions" class="sj-hero__image">
+                    <div class="sj-hero__overlay">
+                        <div class="sj-hero__content">
+                            <h1 class="sj-hero__title"
+                                data-hero-title-en="Quality Recruitment Services" 
+                                data-hero-title-ar="خدمات توظيف عالية الجودة">
+                                Quality Recruitment Services
+                            </h1>
+                            <p class="sj-hero__subtitle"
+                               data-hero-subtitle-en="Finding the right talent for your organization"
+                               data-hero-subtitle-ar="العثور على الموهبة المناسبة لمنظمتك">
+                                Finding the right talent for your organization
+                            </p>
+                            <a href="contact.html" class="sj-hero__cta"
+                               data-hero-cta-en="Contact Us" data-hero-cta-ar="اتصل بنا">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Carousel Navigation -->
+                <div class="sj-hero__carousel-nav">
+                    <button class="sj-hero__arrow sj-hero__arrow--prev" aria-label="Previous slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </button>
+                    
+                    <div class="sj-hero__dots" role="tablist" aria-label="Carousel slides">
+                        <button class="sj-hero__dot sj-hero__dot--active" role="tab" aria-selected="true" aria-label="Slide 1"></button>
+                        <button class="sj-hero__dot" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+                        <button class="sj-hero__dot" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+                    </div>
+                    
+                    <button class="sj-hero__arrow sj-hero__arrow--next" aria-label="Next slide">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Intro Section -->
+        <section class="sj-section" aria-label="Our Services">
+            <div class="sj-container">
+                <div class="sj-section__header" style="text-align: center; margin-bottom: var(--sj-spacing-xl);">
+                    <h2 data-section-title-en="Our Services" data-section-title-ar="خدماتنا">Our Services</h2>
+                    <p data-section-subtitle-en="Comprehensive solutions for your legal and recruitment needs" data-section-subtitle-ar="حلول شاملة لاحتياجاتك القانونية والتوظيفية">
+                        Comprehensive solutions for your legal and recruitment needs
+                    </p>
+                </div>
+                
+                <div class="sj-grid sj-grid--3">
+                    <!-- Service Card 1 -->
+                    <article class="sj-card sj-animate-on-scroll" data-card-en="Legal Consultation" data-card-ar="الاستشارات القانونية">
+                        <div class="sj-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <polyline points="10 9 9 9 8 9"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="sj-card__title" data-card-title-en="Legal Consultation" data-card-title-ar="الاستشارات القانونية">Legal Consultation</h3>
+                        <p class="sj-card__text" data-card-text-en="Professional legal advice and representation for individuals and businesses." data-card-text-ar="نصائح قانونية وتمثيل احترافي للأفراد والشركات.">Professional legal advice and representation for individuals and businesses.</p>
+                        <a href="services.html" class="sj-card__link" data-card-link-en="Learn More" data-card-link-ar="اعرف المزيد">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </article>
+                    
+                    <!-- Service Card 2 -->
+                    <article class="sj-card sj-animate-on-scroll" data-card-en="Employment Matching" data-card-ar="مطابقة التوظيف">
+                        <div class="sj-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                            </svg>
+                        </div>
+                        <h3 class="sj-card__title" data-card-title-en="Employment Matching" data-card-title-ar="مطابقة التوظيف">Employment Matching</h3>
+                        <p class="sj-card__text" data-card-text-en="Connecting qualified candidates with suitable employment opportunities." data-card-text-ar="ربط المرشحين المؤهلين بفرص التوظيف المناسبة.">Connecting qualified candidates with suitable employment opportunities.</p>
+                        <a href="services.html" class="sj-card__link" data-card-link-en="Learn More" data-card-link-ar="اعرف المزيد">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </article>
+                    
+                    <!-- Service Card 3 -->
+                    <article class="sj-card sj-animate-on-scroll" data-card-en="CV Review & Coaching" data-card-ar="مراجعة السيرة الذاتية">
+                        <div class="sj-card__icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="12" cy="7" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="sj-card__title" data-card-title-en="CV Review & Coaching" data-card-title-ar="مراجعة السيرة الذاتية والتدريب">CV Review & Coaching</h3>
+                        <p class="sj-card__text" data-card-text-en="Professional CV writing and interview coaching services." data-card-text-ar="خدمات كتابة السيرة الذاتية الاحترافية وتدريب المقابلات.">Professional CV writing and interview coaching services.</p>
+                        <a href="services.html" class="sj-card__link" data-card-link-en="Learn More" data-card-link-ar="اعرف المزيد">
+                            Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section with Dark Background -->
+        <section class="sj-section" style="background: linear-gradient(135deg, var(--sj-primary) 0%, #0a1425 100%); color: white;">
+            <div class="sj-container">
+                <div style="text-align: center; margin-bottom: var(--sj-spacing-xl);">
+                    <h2 style="color: white;" data-features-title-en="Why Choose Us" data-features-title-ar="لماذا تختارنا">Why Choose Us</h2>
+                    <p style="color: rgba(255,255,255,0.8);" data-features-subtitle-en="Experience the difference with our professional services" data-features-subtitle-ar="استمتع بتجربة فريدة مع خدماتنا الاحترافية">
+                        Experience the difference with our professional services
+                    </p>
+                </div>
+                
+                <div class="sj-grid sj-grid--4">
+                    <div class="sj-animate-on-scroll" style="text-align: center; padding: var(--sj-spacing-lg);">
+                        <div style="width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--sj-spacing-md);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 style="color: white; font-size: 1.1rem;" data-feature-1-en="Verified Services" data-feature-1-ar="خدمات موثقة">Verified Services</h3>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;" data-feature-1-desc-en="Trusted by hundreds of clients" data-feature-1-desc-ar="موثوق من قبل مئات العملاء">Trusted by hundreds of clients</p>
+                    </div>
+                    
+                    <div class="sj-animate-on-scroll" style="text-align: center; padding: var(--sj-spacing-lg);">
+                        <div style="width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--sj-spacing-md);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3 style="color: white; font-size: 1.1rem;" data-feature-2-en="Quick Response" data-feature-2-ar="استجابة سريعة">Quick Response</h3>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;" data-feature-2-desc-en="We respond within 24 hours" data-feature-2-desc-ar="نستجيب خلال 24 ساعة">We respond within 24 hours</p>
+                    </div>
+                    
+                    <div class="sj-animate-on-scroll" style="text-align: center; padding: var(--sj-spacing-lg);">
+                        <div style="width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--sj-spacing-md);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 style="color: white; font-size: 1.1rem;" data-feature-3-en="Expert Team" data-feature-3-ar="فريق متخصص">Expert Team</h3>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;" data-feature-3-desc-en="Years of combined experience" data-feature-3-desc-ar="سنوات من الخبرة المجمعة">Years of combined experience</p>
+                    </div>
+                    
+                    <div class="sj-animate-on-scroll" style="text-align: center; padding: var(--sj-spacing-lg);">
+                        <div style="width: 80px; height: 80px; background: rgba(255,255,255,0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--sj-spacing-md);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3 style="color: white; font-size: 1.1rem;" data-feature-4-en="Secure & Confidential" data-feature-4-ar="آمن وسرّي">Secure & Confidential</h3>
+                        <p style="color: rgba(255,255,255,0.7); font-size: 0.9rem;" data-feature-4-desc-en="Your data is always protected" data-feature-4-desc-ar="بياناتك محمية دائماً">Your data is always protected</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="sj-section sj-section--secondary" aria-label="Call to Action">
+            <div class="sj-container">
+                <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                    <h2 data-cta-title-en="Ready to Get Started?" data-cta-title-ar="هل أنت مستعد للبدء؟">Ready to Get Started?</h2>
+                    <p style="margin-bottom: var(--sj-spacing-lg);" data-cta-text-en="Contact us today to discuss how we can help with your legal or recruitment needs." data-cta-text-ar="اتصل بنا اليوم لمناقشة كيفية مساعدتك في احتياجاتك القانونية أو التوظيفية.">
+                        Contact us today to discuss how we can help with your legal or recruitment needs.
+                    </p>
+                    <div style="display: flex; gap: var(--sj-spacing-md); justify-content: center; flex-wrap: wrap;">
+                        <a href="contact.html" class="sj-btn sj-btn--primary" data-cta-btn1-en="Contact Us" data-cta-btn1-ar="اتصل بنا">Contact Us</a>
+                        <a href="about.html" class="sj-btn sj-btn--secondary" data-cta-btn2-en="Learn More" data-cta-btn2-ar="اعرف المزيد">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="sj-footer" role="contentinfo">
+        <div class="sj-container">
+            <div class="sj-footer__grid">
+                <div class="sj-footer__brand">
+                    <div class="sj-footer__logo">Safe Job - وظيفة آمنة</div>
+                    <p class="sj-footer__desc">Your trusted partner for legal consultation and recruitment services in Iraq and the Middle East.</p>
+                    <div class="sj-social-links">
+                        <a href="https://www.facebook.com/share/18RB3UJqRR/?mibextid=wwXIfr" 
+                           class="sj-social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/h4p1.7?igsh=MXNzdzN0aHcxZXl6dw%3D%3D&utm_source=qr" 
+                           class="sj-social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@m_h.12_d?_r=1&_t=ZS-93ymhmLVT2C" 
+                           class="sj-social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="TikTok">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="sj-footer__section">
+                    <h4 class="sj-footer__title">Quick Links</h4>
+                    <ul class="sj-footer__links">
+                        <li><a href="index.html" class="sj-footer__link" data-footer-link-en="Home" data-footer-link-ar="الرئيسية">Home</a></li>
+                        <li><a href="about.html" class="sj-footer__link" data-footer-link-en="About Us" data-footer-link-ar="من نحن">About Us</a></li>
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="Services" data-footer-link-ar="الخدمات">Services</a></li>
+                        <li><a href="contact.html" class="sj-footer__link" data-footer-link-en="Contact Us" data-footer-link-ar="اتصل بنا">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sj-footer__section">
+                    <h4 class="sj-footer__title">Services</h4>
+                    <ul class="sj-footer__links">
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="Legal Consultation" data-footer-link-ar="الاستشارات القانونية">Legal Consultation</a></li>
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="Employment Matching" data-footer-link-ar="مطابقة التوظيف">Employment Matching</a></li>
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="CV Review" data-footer-link-ar="مراجعة السيرة الذاتية">CV Review</a></li>
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="Interview Coaching" data-footer-link-ar="تدريب المقابلات">Interview Coaching</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sj-footer__bottom">
+                <p class="sj-footer__copyright">&copy; 2024 Safe Job - وظيفة آمنة. All rights reserved.</p>
+                <div class="sj-footer__settings">
+                    <button class="sj-animation-toggle" id="sj-animation-toggle" aria-label="Toggle animations">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                        </svg>
+                        Disable Animations
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,341 @@
+<!-- 
+  Safe Job - وظيفة آمنة | About Page
+  صفحة من نحن - تتضمن قصة الشركة والفريق
+  
+  Testing Language Switcher: اضغط زر تبديل اللغة في الأعلى
+  Replacing Hero Images: استبدل الصور في مجلد images/ أوحدث روابط الصور
+  Contact Email: لتفعيل البريد الإلكتروني استخدم خدمة مثل Formspree
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Safe Job - وظيفة آمنة - Learn about our company and team">
+    <title>About Us - Safe Job - وظيفة آمنة</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="sj-header" role="banner">
+        <div class="sj-container">
+            <div class="sj-header__inner">
+                <!-- Logo -->
+                <a href="index.html" class="sj-logo" aria-label="Safe Job Home">
+                    <span class="sj-logo__main">Safe Job</span>
+                    <span class="sj-logo__sub">وظيفة آمنة</span>
+                </a>
+                
+                <!-- Navigation -->
+                <nav class="sj-nav" role="navigation" aria-label="Main Navigation">
+                    <button class="sj-menu-toggle" id="sj-menu-toggle" aria-expanded="false" aria-controls="sj-nav-list" aria-label="Toggle menu">
+                        <span class="sj-menu-toggle__bar"></span>
+                        <span class="sj-menu-toggle__bar"></span>
+                        <span class="sj-menu-toggle__bar"></span>
+                    </button>
+                    
+                    <ul class="sj-nav__list" id="sj-nav-list" role="menubar">
+                        <li role="none">
+                            <a href="index.html" class="sj-nav__link" 
+                               data-nav-en="Home" data-nav-ar="الرئيسية"
+                               data-href-en="index.html" data-href-ar="index.html"
+                               role="menuitem">Home</a>
+                        </li>
+                        <li role="none">
+                            <a href="about.html" class="sj-nav__link sj-nav__link--active" 
+                               data-nav-en="About Us" data-nav-ar="من نحن"
+                               data-href-en="about.html" data-href-ar="about.html"
+                               role="menuitem">About Us</a>
+                        </li>
+                        <li role="none">
+                            <a href="services.html" class="sj-nav__link"
+                               data-nav-en="Services" data-nav-ar="الخدمات"
+                               data-href-en="services.html" data-href-ar="services.html"
+                               role="menuitem">Services</a>
+                        </li>
+                        <li role="none">
+                            <a href="contact.html" class="sj-nav__link"
+                               data-nav-en="Contact Us" data-nav-ar="اتصل بنا"
+                               data-href-en="contact.html" data-href-ar="contact.html"
+                               role="menuitem">Contact Us</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Language Toggle -->
+                    <button class="sj-lang-toggle" id="sj-lang-toggle" aria-label="Switch to Arabic">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                        AR
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="sj-hero" style="height: 400px;">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&h=400&fit=crop" 
+                 alt="About Safe Job" class="sj-hero__image" style="object-position: center;">
+            <div class="sj-hero__overlay">
+                <div class="sj-hero__content">
+                    <h1 class="sj-hero__title" data-about-title-en="About Us" data-about-title-ar="من نحن">About Us</h1>
+                    <p class="sj-hero__subtitle" data-about-subtitle-en="Learn more about Safe Job and our mission" data-about-subtitle-ar="اعرف المزيد عن وظيفة آمنة ورسالتنا">
+                        Learn more about Safe Job and our mission
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Company Story Section -->
+        <section class="sj-section" aria-label="Our Story">
+            <div class="sj-container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--sj-spacing-xl); align-items: center;">
+                    <div class="sj-animate-on-scroll">
+                        <h2 data-story-title-en="Our Story" data-story-title-ar="قصتنا">Our Story</h2>
+                        <p data-story-text1-en="Safe Job - وظيفة آمنة was established with a vision to bridge the gap between legal expertise and recruitment services in Iraq and the wider Middle East region." 
+                           data-story-text1-ar="تأسست وظيفة آمنة برؤية لسد الفجوة بين الخبرة القانونية وخدمات التوظيف في العراق والمنطقة الشرق أوسطية.">
+                            Safe Job - وظيفة آمنة was established with a vision to bridge the gap between legal expertise and recruitment services in Iraq and the wider Middle East region.
+                        </p>
+                        <p data-story-text2-en="Our team of experienced legal professionals and recruitment specialists work together to provide comprehensive solutions that protect both employers and employees while facilitating meaningful employment connections."
+                           data-story-text2-ar="يعمل فريقنا من المتخصصين القانونيين ذوي الخبرة والمتخصصين في التوظيف معًا لتقديم حلول شاملة تحمي أصحاب العمل والموظفين مع تسهيل فرص العمل ذات المعنى.">
+                            Our team of experienced legal professionals and recruitment specialists work together to provide comprehensive solutions that protect both employers and employees while facilitating meaningful employment connections.
+                        </p>
+                        <p data-story-text3-en="We believe in the power of safe, transparent, and professional services to transform careers and businesses. Our commitment to integrity and excellence has made us a trusted partner for individuals and organizations alike."
+                           data-story-text3-ar="نؤمن بقوة الخدمات الآمنة والشفافة والمهنية لتحويل المسارات المهنية والشركات. التزامنا بالنزاهة والتميز جعلنا شريكًا موثوقًا للأفراد والمنظمات على حد سواء.">
+                            We believe in the power of safe, transparent, and professional services to transform careers and businesses. Our commitment to integrity and excellence has made us a trusted partner for individuals and organizations alike.
+                        </p>
+                    </div>
+                    <div class="sj-animate-on-scroll">
+                        <!-- Office Image from Internet -->
+                        <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&h=400&fit=crop" 
+                             alt="Safe Job Office" 
+                             style="width: 100%; height: 400px; object-fit: cover; border-radius: var(--sj-radius-lg); box-shadow: var(--sj-shadow-lg);">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission & Vision Section -->
+        <section class="sj-section sj-section--secondary" aria-label="Mission and Vision">
+            <div class="sj-container">
+                <div class="sj-grid sj-grid--3">
+                    <article class="sj-card sj-animate-on-scroll" style="text-align: center;">
+                        <div class="sj-card__icon" style="margin: 0 auto var(--sj-spacing-md); background: var(--sj-primary);">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                        </div>
+                        <h3 class="sj-card__title">Our Mission</h3>
+                        <p class="sj-card__text" data-mission-en="To provide reliable legal consultation and quality recruitment services that empower individuals and businesses to achieve their goals safely and professionally." 
+                           data-mission-ar="تقديم استشارات قانونية موثوقة وخدمات توظيف عالية الجودة تمكين الأفراد والشركات من تحقيق أهدافهم بأمان واحترافية.">
+                            To provide reliable legal consultation and quality recruitment services that empower individuals and businesses to achieve their goals safely and professionally.
+                        </p>
+                    </article>
+                    
+                    <article class="sj-card sj-animate-on-scroll" style="text-align: center;">
+                        <div class="sj-card__icon" style="margin: 0 auto var(--sj-spacing-md); background: var(--sj-primary);">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                <circle cx="12" cy="12" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="sj-card__title">Our Vision</h3>
+                        <p class="sj-card__text" data-vision-en="To be the leading provider of integrated legal and recruitment services in the Middle East, known for professionalism, integrity, and client satisfaction." 
+                           data-vision-ar="أن نكون المزود الرائد للخدمات القانونية والتوظيفية المتكاملة في الشرق الأوسط، المعروفين والمهنية والنزاهة ورضا العملاء.">
+                            To be the leading provider of integrated legal and recruitment services in the Middle East, known for professionalism, integrity, and client satisfaction.
+                        </p>
+                    </article>
+                    
+                    <article class="sj-card sj-animate-on-scroll" style="text-align: center;">
+                        <div class="sj-card__icon" style="margin: 0 auto var(--sj-spacing-md); background: var(--sj-primary);">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="sj-card__title">Our Values</h3>
+                        <p class="sj-card__text" data-values-en="Integrity, professionalism, transparency, and commitment to client success guide everything we do at Safe Job." 
+                           data-values-ar="النزاهة والمهنية والشفافية والالتزام بنجاح العملاء توجه كل ما نقوم به في وظيفة آمنة.">
+                            Integrity, professionalism, transparency, and commitment to client success guide everything we do at Safe Job.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="sj-section" aria-label="Our Team">
+            <div class="sj-container">
+                <div style="text-align: center; margin-bottom: var(--sj-spacing-xl);">
+                    <h2>Our Team</h2>
+                    <p>Meet the dedicated professionals behind Safe Job</p>
+                </div>
+                
+                <div class="sj-grid sj-grid--4">
+                    <!-- Team Member 1 -->
+                    <article class="sj-team-card sj-animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" 
+                             alt="Mohamed Ali" class="sj-team-card__image">
+                        <div class="sj-team-card__info">
+                            <h3 class="sj-team-card__name">Mohamed Ali</h3>
+                            <p class="sj-team-card__role">Founder & CEO</p>
+                            <p class="sj-team-card__bio">Experienced entrepreneur with a vision to transform legal and recruitment services in Iraq.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Team Member 2 -->
+                    <article class="sj-team-card sj-animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=300&h=300&fit=crop&crop=face" 
+                             alt="Sarah Ahmed" class="sj-team-card__image">
+                        <div class="sj-team-card__info">
+                            <h3 class="sj-team-card__name">Sarah Ahmed</h3>
+                            <p class="sj-team-card__role">Legal Consultant</p>
+                            <p class="sj-team-card__bio">Senior legal advisor with over 10 years of experience in corporate and employment law.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Team Member 3 -->
+                    <article class="sj-team-card sj-animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" 
+                             alt="Omar Hassan" class="sj-team-card__image">
+                        <div class="sj-team-card__info">
+                            <h3 class="sj-team-card__name">Omar Hassan</h3>
+                            <p class="sj-team-card__role">Recruitment Manager</p>
+                            <p class="sj-team-card__bio">Expert in talent acquisition with a proven track record in matching candidates with opportunities.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Team Member 4 -->
+                    <article class="sj-team-card sj-animate-on-scroll">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face" 
+                             alt="Fatima Rashid" class="sj-team-card__image">
+                        <div class="sj-team-card__info">
+                            <h3 class="sj-team-card__name">Fatima Rashid</h3>
+                            <p class="sj-team-card__role">Career Coach</p>
+                            <p class="sj-team-card__bio">Professional CV writer and interview coach helping candidates land their dream jobs.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="sj-section" style="background: linear-gradient(135deg, var(--sj-primary) 0%, #0a1425 100%); color: white;" aria-label="Company Statistics">
+            <div class="sj-container">
+                <div class="sj-grid sj-grid--4" style="text-align: center;">
+                    <div class="sj-animate-on-scroll">
+                        <h2 style="font-size: 3rem; color: white;">500+</h2>
+                        <p style="color: rgba(255,255,255,0.8);">Successful Placements</p>
+                    </div>
+                    <div class="sj-animate-on-scroll">
+                        <h2 style="font-size: 3rem; color: white;">200+</h2>
+                        <p style="color: rgba(255,255,255,0.8);">Legal Cases Handled</p>
+                    </div>
+                    <div class="sj-animate-on-scroll">
+                        <h2 style="font-size: 3rem; color: white;">50+</h2>
+                        <p style="color: rgba(255,255,255,0.8);">Corporate Clients</p>
+                    </div>
+                    <div class="sj-animate-on-scroll">
+                        <h2 style="font-size: 3rem; color: white;">95%</h2>
+                        <p style="color: rgba(255,255,255,0.8);">Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="sj-section sj-section--secondary" aria-label="Contact CTA">
+            <div class="sj-container">
+                <div style="text-align: center; max-width: 700px; margin: 0 auto;">
+                    <h2>Want to Work With Us?</h2>
+                    <p style="margin-bottom: var(--sj-spacing-lg);">Join our growing network of satisfied clients and candidates.</p>
+                    <a href="contact.html" class="sj-btn sj-btn--primary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="sj-footer" role="contentinfo">
+        <div class="sj-container">
+            <div class="sj-footer__grid">
+                <div class="sj-footer__brand">
+                    <div class="sj-footer__logo">Safe Job - وظيفة آمنة</div>
+                    <p class="sj-footer__desc">Your trusted partner for legal consultation and recruitment services in Iraq and the Middle East.</p>
+                    <div class="sj-social-links">
+                        <a href="https://www.facebook.com/share/18RB3UJqRR/?mibextid=wwXIfr" 
+                           class="sj-social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/h4p1.7?igsh=MXNzdzN0aHcxZXl6dw%3D%3D&utm_source=qr" 
+                           class="sj-social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@m_h.12_d?_r=1&_t=ZS-93ymhmLVT2C" 
+                           class="sj-social-link" 
+                           target="_blank" 
+                           rel="noopener noreferrer"
+                           aria-label="TikTok">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="sj-footer__section">
+                    <h4 class="sj-footer__title">Quick Links</h4>
+                    <ul class="sj-footer__links">
+                        <li><a href="index.html" class="sj-footer__link" data-footer-link-en="Home" data-footer-link-ar="الرئيسية">Home</a></li>
+                        <li><a href="about.html" class="sj-footer__link" data-footer-link-en="About Us" data-footer-link-ar="من نحن">About Us</a></li>
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="Services" data-footer-link-ar="الخدمات">Services</a></li>
+                        <li><a href="contact.html" class="sj-footer__link" data-footer-link-en="Contact Us" data-footer-link-ar="اتصل بنا">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sj-footer__section">
+                    <h4 class="sj-footer__title">Services</h4>
+                    <ul class="sj-footer__links">
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="Legal Consultation" data-footer-link-ar="الاستشارات القانونية">Legal Consultation</a></li>
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="Employment Matching" data-footer-link-ar="مطابقة التوظيف">Employment Matching</a></li>
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="CV Review" data-footer-link-ar="مراجعة السيرة الذاتية">CV Review</a></li>
+                        <li><a href="services.html" class="sj-footer__link" data-footer-link-en="Interview Coaching" data-footer-link-ar="تدريب المقابلات">Interview Coaching</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sj-footer__bottom">
+                <p class="sj-footer__copyright">&copy; 2024 Safe Job - وظيفة آمنة. All rights reserved.</p>
+                <div class="sj-footer__settings">
+                    <button class="sj-animation-toggle" id="sj-animation-toggle" aria-label="Toggle animations">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                        </svg>
+                        Disable Animations
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
